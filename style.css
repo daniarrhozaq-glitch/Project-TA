@@ -276,11 +276,7 @@ a {
    ========================================== */
 .kontainer-utama {
     max-width: 80rem;
-<<<<<<< HEAD
     margin: 2rem auto;
-=======
-    margin: 2.5rem auto;
->>>>>>> e04bd63 (update file)
     padding: 0 1.5rem;
     width: 100%;
     flex-grow: 1;
@@ -371,27 +367,15 @@ a {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 1rem;
-<<<<<<< HEAD
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-=======
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    align-items: center;
->>>>>>> e04bd63 (update file)
 }
 
 @media (min-width: 768px) {
     .kartu-detail-produk {
         flex-direction: row;
-<<<<<<< HEAD
-=======
-        align-items: stretch;
->>>>>>> e04bd63 (update file)
         padding: 2.5rem;
     }
 }
@@ -399,11 +383,7 @@ a {
 .gambar-detail-produk {
     width: 100%;
     max-width: 24rem;
-<<<<<<< HEAD
     height: auto;
-=======
-    aspect-ratio: 1 / 1;
->>>>>>> e04bd63 (update file)
     object-fit: cover;
     border-radius: 0.75rem;
     border: 1px solid #f3f4f6;
@@ -412,83 +392,46 @@ a {
 .informasi-detail-produk {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     justify-content: space-between;
-=======
-    justify-content: center;
->>>>>>> e04bd63 (update file)
     gap: 1.5rem;
     width: 100%;
 }
 
 .label-kategori-detail {
-<<<<<<< HEAD
     font-size: 0.875rem;
     font-weight: 600;
     color: #2563eb;
     text-transform: uppercase;
-=======
-    font-size: 0.813rem;
-    font-weight: 700;
-    color: #2563eb;
-    text-transform: uppercase;
-    letter-spacing: 0.025em;
->>>>>>> e04bd63 (update file)
     display: block;
     margin-bottom: 0.5rem;
 }
 
 .judul-detail-produk {
-<<<<<<< HEAD
     font-size: 1.75rem;
     font-weight: 800;
     color: #1f2937;
     margin-bottom: 0.75rem;
-=======
-    font-size: 1.875rem;
-    font-weight: 800;
-    color: #1f2937;
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    line-height: 1.2;
->>>>>>> e04bd63 (update file)
 }
 
 .harga-detail-produk {
     font-size: 1.5rem;
     font-weight: 800;
     color: #2563eb;
-<<<<<<< HEAD
     margin-bottom: 1rem;
-=======
-    margin-top: 0;
-    margin-bottom: 1.25rem;
->>>>>>> e04bd63 (update file)
 }
 
 .deskripsi-detail-produk {
     font-size: 0.95rem;
     color: #4b5563;
     line-height: 1.6;
-<<<<<<< HEAD
-=======
-    margin: 0;
->>>>>>> e04bd63 (update file)
 }
 
 .area-aksi-produk {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     gap: 1rem;
     border-top: 1px solid #e5e7eb;
     padding-top: 1.5rem;
-=======
-    gap: 1.25rem;
-    border-top: 1px solid #e5e7eb;
-    padding-top: 1.5rem;
-    margin-top: 0.5rem;
->>>>>>> e04bd63 (update file)
 }
 
 .grup-jumlah-produk {
@@ -504,17 +447,10 @@ a {
 }
 
 .input-jumlah-detail {
-<<<<<<< HEAD
     width: 4rem;
     padding: 0.375rem 0.5rem;
     border: 1px solid #d1d5db;
     border-radius: 0.375rem;
-=======
-    width: 4.5rem;
-    padding: 0.5rem;
-    border: 1px solid #d1d5db;
-    border-radius: 0.5rem;
->>>>>>> e04bd63 (update file)
     text-align: center;
     font-size: 0.875rem;
     outline: none;
@@ -536,16 +472,9 @@ a {
     background-color: #eff6ff;
     color: #2563eb;
     border: 1px solid #bfdbfe;
-<<<<<<< HEAD
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     font-weight: 600;
-=======
-    padding: 0.875rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    font-size: 0.95rem;
->>>>>>> e04bd63 (update file)
     text-align: center;
     flex: 1;
     transition: background-color 0.2s;
@@ -558,16 +487,9 @@ a {
 .tombol-beli-langsung {
     background-color: #16a34a;
     color: #ffffff;
-<<<<<<< HEAD
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     font-weight: 600;
-=======
-    padding: 0.875rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    font-size: 0.95rem;
->>>>>>> e04bd63 (update file)
     text-align: center;
     flex: 1;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -896,7 +818,6 @@ a {
 /* ==========================================
    9. HALAMAN LOGIN (LOGIN.HTML)
    ========================================== */
-<<<<<<< HEAD
 /* ==========================================
    TAMBAHAN CLASS UNTUK LOGIN_2.HTML
    ========================================== */
@@ -909,8 +830,6 @@ body {
     background-color: #f3f4f6;
 }
 
-=======
->>>>>>> e04bd63 (update file)
 .login-container {
     background-color: #ffffff;
     padding: 2rem;
