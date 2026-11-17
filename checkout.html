@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - TitutShop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="halaman-checkout">
+    <!-- Navigasi Utama -->
+    <nav class="bilah-navigasi">
+        <div class="kontainer-navigasi">
+            <a href="index.html" class="logo-toko">TitutShop </a>
+            <div class="menu-navigasi">
+                <a href="index.html" class="tautan-navigasi">Beranda</a>
+                <a href="katalog.html" class="tautan-navigasi">Katalog</a>
+                <a href="detail.html" class="tautan-navigasi">Detail Produk</a>
+                <a href="keranjang.html" class="tautan-navigasi">Keranjang</a>
+                <a href="checkout.html" class="tautan-aktif">Checkout</a>
+            </div>
+            <a href="login.html" class="tombol-keluar"> Keluar</a>
+        </div>
+    </nav>
+
+    <div class="kontainer-sedang">
+        <h1 class="judul-halaman">HALAMAN PEMESANAN</h1>
+
+        <form action="#" onsubmit="alert('Pesanan Berhasil Dibuat!'); window.location.href='index.html'; return false;" class="kartu-formulir-checkout">
+            <!-- Bagian Informasi Pengiriman -->
+            <div class="kelompok-formulir">
+                <h3 class="subjudul-formulir">Informasi Pengiriman</h3>
+                <div class="kisi-input">
+                    <input type="text" placeholder="Nama Lengkap" required class="input-teks">
+                    <input type="tel" placeholder="Nomor Telepon" required class="input-teks">
+                </div>
+                <textarea placeholder="Alamat Lengkap" rows="3" required class="input-area-teks"></textarea>
+            </div>
+
+            <!-- Bagian Metode Pembayaran -->
+            <div class="kelompok-formulir">
+                <h3 class="subjudul-formulir">Metode Pembayaran</h3>
+                <div class="daftar-pembayaran">
+                    <label class="pilihan-pembayaran">
+                        <input type="radio" name="payment" checked class="radio-input">
+                        <span class="label-pembayaran">Transfer Bank (BCA / Mandiri / BRI / BNI )</span>
+                    </label>
+                    
+                    <label class="pilihan-pembayaran">
+                        <input type="radio" name="payment" class="radio-input">
+                        <span class="label-pembayaran">E-Wallet (Gopay / OVO)</span>
+                    </label>
+                    <label class="pilihan-pembayaran">
+                        <input type="radio" name="payment" class="radio-input">
+                        <span class="label-pembayaran">COD (Cash On Delivery)</span>
+                    </label>
+                    
+                </div>
+            </div>
+
+            <!-- Bagian Ringkasan & Tombol Bayar -->
+            <div class="baris-konfirmasi-bayar">
+                <div>
+                    <span class="label-total-bayar">Total Pembayaran</span>
+                    <span class="harga-total-bayar">Rp</span>
+                </div>
+                <button type="submit" class="tombol-bayar">
+                    lanjut pembayaran
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bagian-footer">
+        &copy; 2026 TitutShop. Hak Cipta Dilindungi.
+    </footer>
+</body>
+</html>

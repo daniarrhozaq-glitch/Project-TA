@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog - TitutShop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="halaman-katalog">
+    <!-- Navigasi Utama -->
+    <nav class="bilah-navigasi">
+        <div class="kontainer-navigasi">
+            <a href="index.html" class="logo-toko">TitutShop</a>
+            <div class="menu-navigasi">
+                <a href="index.html" class="tautan-navigasi">Beranda</a>
+                <a href="katalog.html" class="tautan-aktif">Katalog</a>
+                <a href="detail.html" class="tautan-navigasi">Detail Produk</a>
+                <a href="keranjang.html" class="tautan-navigasi">Keranjang</a>
+                <a href="checkout.html" class="tautan-navigasi">Checkout</a>
+            </div>
+            <a href="login.html" class="tombol-keluar">Keluar</a>
+        </div>
+    </nav>
+
+    <div class="kontainer-utama">
+        <h1 class="judul-halaman">Katalog Produk</h1>
+        
+        <!-- Filter & Pencarian -->
+        <div class="area-filter-pencarian">
+            <input type="text" placeholder="Cari produk..." class="input-pencarian">
+            <select class="pilih-kategori">
+                <option>Semua Kategori</option>
+                <option>Elektronik</option>
+                <option>Fashion</option>
+                <option>Aksesoris</option>
+            </select>
+        </div>
+
+        <!-- Grid Produk -->
+        <div class="kisi-katalog-produk">
+            <div class="kartu-produk">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" class="gambar-produk" alt="Headphone">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Headphone Wireless</h3>
+                <p class="harga-produk">Rp 750.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" class="gambar-produk" alt="Jam">
+                <span class="label-kategori">Aksesoris</span>
+                <h3 class="nama-produk">Jam Tangan Smartwatch</h3>
+                <p class="harga-produk">Rp 1.200.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="smarttvsamsung.jpg" class="gambar-produk" alt="TV">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Samsung Series 7 AU7000UXZN 109,2 cm (43") 4K Ultra HD TV Cerdas Wi-Fi</h3>
+                <p class="harga-produk">Rp 5.999.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="andoridtvbox.jpg" class="gambar-produk" alt="AndroidTVBox">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Hiplay X96Q Netflix Register Android 10.0 Android TV Box 2GB</h3>
+                <p class="harga-produk">Rp 425.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="kipas angin.jpg" class="gambar-produk" alt="Kipas Angin">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Cosmos Kipas Angin Stand Fan 16-Sdb</h3>
+                <p class="harga-produk">Rp 306.500</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="kulkas2pintu.jpg" class="gambar-produk" alt="Kulkas">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">4. LG 235L / 217L Kulkas 2 Pintu Inverter Compressor</h3>
+                <p class="harga-produk">Rp 3.962.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="setrika.jpg" class="gambar-produk" alt="Setrika">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Philips Setrika Uap 2000 Watt Dst1040/30</h3>
+                <p class="harga-produk">Rp 369.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="macbook.jpeg" class="gambar-produk" alt="Macbook">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">MacBook M5 Pro</h3>
+                <p class="harga-produk">Rp 26.999.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="ipad.jpeg" class="gambar-produk" alt="Ipad">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">iPad M5 Pro</h3>
+                <p class="harga-produk">Rp 20.499.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="airpod.jpeg" class="gambar-produk" alt="Airpod">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Airpods Pro (generasi ke-3)</h3>
+                <p class="harga-produk">Rp 3.099.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="headphone.jpeg" class="gambar-produk" alt="Headphone">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Sony WH-1000XM5 Wireless Headphones</h3>
+                <p class="harga-produk">Rp 3.849.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="ip18promax.jpeg" class="gambar-produk" alt="Iphone 18 Pro Max">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">iPhone 18 Pro Max</h3>
+                <p class="harga-produk">Rp 29.499.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="airfryer.jpeg" class="gambar-produk" alt="Air Fryer">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Air Fryer AF-8001</h3>
+                <p class="harga-produk">Rp 800.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="blender.jpeg" class="gambar-produk" alt="Blender">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Blender / Food Processor</h3>
+                <p class="harga-produk">Rp 650.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="hairdryer.jpeg" class="gambar-produk" alt="Hair Dryer">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Hair Dryer Sanwoo</h3>
+                <p class="harga-produk">Rp 350.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="catokan.jpeg" class="gambar-produk" alt="Catokan">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Catokan Rambut (Hair Straightener)</h3>
+                <p class="harga-produk">Rp 250.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+            <div class="kartu-produk">
+                <img src="ricecooker.jpeg" class="gambar-produk" alt="Rice Cooker">
+                <span class="label-kategori">Elektronik</span>
+                <h3 class="nama-produk">Rice Cooker Cosmos</h3>
+                <p class="harga-produk">Rp 250.000</p>
+                <a href="detail.html" class="tombol-detail">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bagian-footer">
+        &copy; 2026 TitutShop. Hak Cipta Dilindungi.
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const inputPencarian = document.querySelector('.input-pencarian');
+            const pilihKategori = document.querySelector('.pilih-kategori');
+            const kartuProdukList = document.querySelectorAll('.kartu-produk');
+            const pesanKosong = document.getElementById('pesan-kosong');
+
+            function filterProduk() {
+                const kataKunci = inputPencarian.value.toLowerCase().trim();
+                const kategoriDipilih = pilihKategori.value.trim().toLowerCase();
+                let jumlahTampil = 0;
+
+                kartuProdukList.forEach((kartu) => {
+                    const namaProduk = kartu.querySelector('.nama-produk')?.textContent.toLowerCase() || '';
+                    const kategoriProduk = kartu.querySelector('.label-kategori')?.textContent.trim().toLowerCase() || '';
+
+                    const cocokNama = namaProduk.includes(kataKunci);
+                    const cocokKategori =
+                        kategoriDipilih === 'semua kategori' ||
+                        kategoriDipilih === '' ||
+                        kategoriProduk === kategoriDipilih;
+
+                    if (cocokNama && cocokKategori) {
+                        kartu.style.display = '';
+                        jumlahTampil++;
+                    } else {
+                        kartu.style.display = 'none';
+                    }
+                });
+
+                pesanKosong.classList.toggle('hidden', jumlahTampil > 0);
+            }
+
+            inputPencarian.addEventListener('input', filterProduk);
+            pilihKategori.addEventListener('change', filterProduk);
+        });
+    </script>
+</body>
+</html>
