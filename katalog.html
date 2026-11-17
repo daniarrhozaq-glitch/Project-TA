@@ -166,42 +166,5 @@
     <footer class="bagian-footer">
         &copy; 2026 TitutShop. Hak Cipta Dilindungi.
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const inputPencarian = document.querySelector('.input-pencarian');
-            const pilihKategori = document.querySelector('.pilih-kategori');
-            const kartuProdukList = document.querySelectorAll('.kartu-produk');
-            const pesanKosong = document.getElementById('pesan-kosong');
-
-            function filterProduk() {
-                const kataKunci = inputPencarian.value.toLowerCase().trim();
-                const kategoriDipilih = pilihKategori.value.trim().toLowerCase();
-                let jumlahTampil = 0;
-
-                kartuProdukList.forEach((kartu) => {
-                    const namaProduk = kartu.querySelector('.nama-produk')?.textContent.toLowerCase() || '';
-                    const kategoriProduk = kartu.querySelector('.label-kategori')?.textContent.trim().toLowerCase() || '';
-
-                    const cocokNama = namaProduk.includes(kataKunci);
-                    const cocokKategori =
-                        kategoriDipilih === 'semua kategori' ||
-                        kategoriDipilih === '' ||
-                        kategoriProduk === kategoriDipilih;
-
-                    if (cocokNama && cocokKategori) {
-                        kartu.style.display = '';
-                        jumlahTampil++;
-                    } else {
-                        kartu.style.display = 'none';
-                    }
-                });
-
-                pesanKosong.classList.toggle('hidden', jumlahTampil > 0);
-            }
-
-            inputPencarian.addEventListener('input', filterProduk);
-            pilihKategori.addEventListener('change', filterProduk);
-        });
-    </script>
 </body>
 </html>
