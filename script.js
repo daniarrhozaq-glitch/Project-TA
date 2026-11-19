@@ -1,5 +1,5 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Mencegah form reload langsung
+    event.preventDefault(); 
 
     const inputUsername = document.getElementById('username').value;
     const inputPassword = document.getElementById('password').value;
