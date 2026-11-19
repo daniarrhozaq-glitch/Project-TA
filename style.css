@@ -42,9 +42,17 @@ a {
 }
 
 .logo-toko {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #2563eb;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f172a;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.logo-toko span{
+    color: #3b82f6;
 }
 
 .menu-navigasi {
@@ -90,18 +98,7 @@ a {
     background-color: #fef2f2;
 }
 
-/* ==========================================
-   3. FOOTER
-   ========================================== */
-.bagian-footer {
-    background-color: #ffffff;
-    border-top: 1px solid #e5e7eb;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 0.875rem;
-    color: #6b7280;
-    margin-top: auto;
-}
+
 
 /* ==========================================
    4. HALAMAN UTAMA (INDEX.HTML)
@@ -238,8 +235,11 @@ a {
 
 .gambar-produk {
     width: 100%;
-    height: 12rem;
-    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    background-color: #ffffff;
     border-radius: 0.5rem;
 }
 
@@ -909,4 +909,385 @@ a {
 
 .tombol-login:hover {
     background-color: #1d4ed8;
+}
+/* ==========================================
+   6. HALAMAN DETAIL PRODUK (DETAIL.HTML)
+   ========================================== */
+.kartu-detail-produk {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 768px) {
+    .kartu-detail-produk {
+        flex-direction: row;
+        align-items: center;
+        padding: 2.5rem;
+    }
+}
+
+.gambar-detail-produk {
+    width: 100%;
+    max-width: 26rem;
+    aspect-ratio: 16 / 10; /* Proporsional untuk layar Smart TV / widescreen */
+    height: auto;
+    object-fit: contain;  /* Menampilkan seluruh bodi TV tanpa terpotong */
+    object-position: center;
+    background-color: #f8fafc;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+}
+
+.informasi-detail-produk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.label-kategori-detail {
+    font-size: 0.813rem;
+    font-weight: 700;
+    color: #2563eb;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.judul-detail-produk {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+    .judul-detail-produk {
+        font-size: 2rem;
+    }
+}
+
+.harga-detail-produk {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2563eb;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+.deskripsi-detail-produk {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.7;
+    margin: 0;
+    text-align: justify;
+}
+
+.area-aksi-produk {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.grup-jumlah-produk {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.label-jumlah {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.input-jumlah-detail {
+    width: 4.5rem;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-jumlah-detail:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.grup-tombol-aksi {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+@media (min-width: 640px) {
+    .grup-tombol-aksi {
+        flex-direction: row;
+    }
+}
+
+.tombol-tambah-keranjang {
+    background-color: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+    padding: 0.875rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    flex: 1;
+    transition: background-color 0.2s, transform 0.15s;
+}
+
+.tombol-tambah-keranjang:hover {
+    background-color: #dbeafe;
+}
+
+.tombol-beli-langsung {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.875rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.25);
+    transition: background-color 0.2s, transform 0.15s;
+}
+
+.tombol-beli-langsung:hover {
+    background-color: #1d4ed8;
+}
+/* ==========================================
+   3. FOOTER (BERURUTAN KIRI KE KANAN)
+   ========================================== */
+.bagian-footer {
+    background-color: #ffffff;
+    color: #334155;
+    width: 100%;
+    margin-top: auto;
+    padding: 4rem 1.5rem 1.75rem;
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 -4px 20px rgba(15, 23, 42, 0.03);
+}
+
+.bagian-footer *,
+.bagian-footer *::before,
+.bagian-footer *::after {
+    box-sizing: border-box;
+}
+
+/* Grid berurutan dari kiri ke kanan: Brand & Deskripsi (kiri) | Tautan Cepat (tengah) | Pembayaran (kanan) */
+.kontainer-footer {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2.2fr 1fr 1.2fr;
+    gap: 3rem;
+    align-items: start;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Kolom 1 (Kiri): Brand & Deskripsi */
+.kolom-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.logo-footer {
+    display: inline-block;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+}
+
+.logo-footer span {
+    color: #2563eb;
+}
+
+.deskripsi-footer {
+    font-size: 0.875rem;
+    line-height: 1.75;
+    color: #4b5563;
+    text-align: left;
+    max-width: 38rem;
+    margin-bottom: 1.25rem;
+    text-align: justify;
+}
+
+.kontak-footer {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #1d4ed8;
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    padding: 0.5rem 0.875rem;
+    border-radius: 0.5rem;
+}
+
+/* Kolom 2 & 3 (Tengah ke Kanan): Tautan Cepat & Pembayaran */
+.kolom-kiri-tengah {
+    display: contents; /* Memecah wrapper agar anak-anaknya ikut berurutan kiri ke kanan di grid */
+}
+
+.grup-menu-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.judul-footer {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+.judul-footer::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2rem;
+    height: 2.5px;
+    background-color: #2563eb;
+    border-radius: 9999px;
+}
+
+/* Daftar Tautan Cepat */
+.daftar-tautan-footer {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.daftar-tautan-footer a {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.daftar-tautan-footer a:hover {
+    color: #2563eb;
+    transform: translateX(4px);
+}
+
+/* Daftar Pembayaran Berurutan */
+.daftar-pembayaran-footer {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.daftar-pembayaran-footer li a,
+.daftar-pembayaran-footer li span {
+    display: inline-block;
+    background-color: #f9fafb;
+    color: #1f2937;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    padding: 0.4rem 0.875rem;
+    border-radius: 0.375rem;
+    border: 1px solid #e5e7eb;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.daftar-pembayaran-footer li a:hover,
+.daftar-pembayaran-footer li span:hover {
+    background-color: #eff6ff;
+    border-color: #93c5fd;
+    color: #1d4ed8;
+    transform: translateX(3px);
+}
+
+/* Bagian Bawah Footer: Copyright & Ikon Sosmed */
+.bawah-footer {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.bawah-footer p {
+    font-size: 0.8125rem;
+    color: #6b7280;
+}
+
+.sosmed-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sosmed-footer a {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    background-color: #f3f4f6;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.sosmed-footer a:hover {
+    color: #ffffff;
+    border-color: transparent;
+    transform: translateY(-3px);
+}
+
+.sosmed-footer a.ikon-wa:hover {
+    background-color: #25d366;
+    box-shadow: 0 6px 14px rgba(37, 211, 102, 0.28);
+}
+
+.sosmed-footer a.ikon-ig:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    box-shadow: 0 6px 14px rgba(214, 36, 159, 0.28);
+}
+
+.sosmed-footer a.ikon-tt:hover {
+    background-color: #111827;
+    box-shadow: -2px -2px 0 #25f4ee, 2px 2px 0 #fe2c55;
 }
