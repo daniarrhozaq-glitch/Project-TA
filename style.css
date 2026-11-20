@@ -51,7 +51,7 @@ a {
     margin-bottom: 16px;
 }
 
-.logo-toko span{
+.logo-toko span {
     color: #3b82f6;
 }
 
@@ -69,8 +69,8 @@ a {
 
 .tautan-navigasi {
     font-size: 0.875rem;
-    font-weight: 500;
-    color: #4b5563;
+    font-weight: 600;
+    color: #010a17;
     transition: color 0.2s;
 }
 
@@ -97,8 +97,6 @@ a {
 .tombol-keluar:hover {
     background-color: #fef2f2;
 }
-
-
 
 /* ==========================================
    4. HALAMAN UTAMA (INDEX.HTML)
@@ -213,7 +211,8 @@ a {
 
 @media (min-width: 1024px) {
     .kisi-produk {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
     }
 }
 
@@ -221,7 +220,7 @@ a {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 0.75rem;
-    padding: 1rem;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -235,7 +234,8 @@ a {
 
 .gambar-produk {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 10;
+    max-height: 16rem;
     height: auto;
     object-fit: contain;
     object-position: center;
@@ -361,7 +361,7 @@ a {
 }
 
 /* ==========================================
-   6. HALAMAN DETAIL PRODUK (DETAIL.HTML)
+   6. HALAMAN DETAIL PRODUK
    ========================================== */
 .kartu-detail-produk {
     background-color: #ffffff;
@@ -372,23 +372,28 @@ a {
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 @media (min-width: 768px) {
     .kartu-detail-produk {
         flex-direction: row;
-        align-items: stretch;
+        align-items: center;
         padding: 2.5rem;
     }
 }
 
 .gambar-detail-produk {
     width: 100%;
-    max-width: 24rem;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
+    max-width: 26rem;
+    aspect-ratio: 16 / 10;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    background-color: #f8fafc;
+    padding: 0.75rem;
     border-radius: 0.75rem;
-    border: 1px solid #f3f4f6;
+    border: 1px solid #e5e7eb;
 }
 
 .informasi-detail-produk {
@@ -404,18 +409,24 @@ a {
     font-weight: 700;
     color: #2563eb;
     text-transform: uppercase;
-    letter-spacing: 0.025em;
+    letter-spacing: 0.04em;
     display: block;
     margin-bottom: 0.5rem;
 }
 
 .judul-detail-produk {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     font-weight: 800;
-    color: #1f2937;
+    color: #111827;
     margin-top: 0;
     margin-bottom: 0.75rem;
-    line-height: 1.2;
+    line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+    .judul-detail-produk {
+        font-size: 2rem;
+    }
 }
 
 .harga-detail-produk {
@@ -429,8 +440,9 @@ a {
 .deskripsi-detail-produk {
     font-size: 0.95rem;
     color: #4b5563;
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
+    text-align: justify;
 }
 
 .area-aksi-produk {
@@ -448,6 +460,17 @@ a {
     gap: 1rem;
 }
 
+.label-diskon {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ff0404;
+}
+
+.harga-coret-fs {
+    color: #ff0404;
+    text-decoration: line-through;
+}
+
 .label-jumlah {
     font-size: 0.875rem;
     font-weight: 600;
@@ -461,7 +484,14 @@ a {
     border-radius: 0.5rem;
     text-align: center;
     font-size: 0.875rem;
+    font-weight: 600;
     outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-jumlah-detail:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
 .grup-tombol-aksi {
@@ -486,7 +516,7 @@ a {
     font-size: 0.95rem;
     text-align: center;
     flex: 1;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, transform 0.15s;
 }
 
 .tombol-tambah-keranjang:hover {
@@ -494,7 +524,7 @@ a {
 }
 
 .tombol-beli-langsung {
-    background-color: #16a34a;
+    background-color: #2563eb;
     color: #ffffff;
     padding: 0.875rem 1.5rem;
     border-radius: 0.5rem;
@@ -502,16 +532,16 @@ a {
     font-size: 0.95rem;
     text-align: center;
     flex: 1;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.25);
+    transition: background-color 0.2s, transform 0.15s;
 }
 
 .tombol-beli-langsung:hover {
-    background-color: #15803d;
+    background-color: #1d4ed8;
 }
 
 /* ==========================================
-   7. HALAMAN KERANJANG (KERANJANG.HTML)
+   7. HALAMAN KERANJANG
    ========================================== */
 .kisi-keranjang {
     display: grid;
@@ -828,12 +858,30 @@ a {
 /* ==========================================
    9. HALAMAN LOGIN (LOGIN.HTML)
    ========================================== */
+body.login-page {
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.55),
+            rgba(240, 249, 255, 0.65)
+        ),
+        url('bglogin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .login-container {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     padding: 2rem;
     border-radius: 1rem;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.15);
     width: 100%;
     max-width: 26rem;
 }
@@ -852,7 +900,7 @@ a {
 
 .login-header p {
     font-size: 0.875rem;
-    color: #6b7280;
+    color: #4b5563;
 }
 
 #loginForm {
@@ -878,6 +926,7 @@ a {
     border: 1px solid #d1d5db;
     border-radius: 0.5rem;
     font-size: 0.875rem;
+    background-color: rgba(255, 255, 255, 0.95);
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
@@ -910,176 +959,30 @@ a {
 .tombol-login:hover {
     background-color: #1d4ed8;
 }
+
 /* ==========================================
-   6. HALAMAN DETAIL PRODUK (DETAIL.HTML)
+   FLASHSALE
    ========================================== */
-.kartu-detail-produk {
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 1rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    align-items: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-}
-
-@media (min-width: 768px) {
-    .kartu-detail-produk {
-        flex-direction: row;
-        align-items: center;
-        padding: 2.5rem;
-    }
-}
-
-.gambar-detail-produk {
-    width: 100%;
-    max-width: 26rem;
-    aspect-ratio: 16 / 10; /* Proporsional untuk layar Smart TV / widescreen */
-    height: auto;
-    object-fit: contain;  /* Menampilkan seluruh bodi TV tanpa terpotong */
-    object-position: center;
-    background-color: #f8fafc;
-    padding: 0.75rem;
-    border-radius: 0.75rem;
-    border: 1px solid #e5e7eb;
-}
-
-.informasi-detail-produk {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-    width: 100%;
-}
-
-.label-kategori-detail {
-    font-size: 0.813rem;
+.badge-flash-sale {
+    font-size: 1.25rem;
     font-weight: 700;
-    color: #2563eb;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.judul-detail-produk {
-    font-size: 1.75rem;
-    font-weight: 800;
-    color: #111827;
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    line-height: 1.25;
-}
-
-@media (min-width: 768px) {
-    .judul-detail-produk {
-        font-size: 2rem;
-    }
-}
-
-.harga-detail-produk {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #2563eb;
-    margin-top: 0;
     margin-bottom: 1.25rem;
+    color: #e95e01;
 }
 
-.deskripsi-detail-produk {
-    font-size: 0.95rem;
-    color: #4b5563;
-    line-height: 1.7;
-    margin: 0;
-    text-align: justify;
+.judul-bagian {
+    font-size: 1.5rem;
 }
 
-.area-aksi-produk {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    border-top: 1px solid #e5e7eb;
-    padding-top: 1.5rem;
-    margin-top: 0.5rem;
+.unit-waktu {
+    font-size: 1.00rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    color: #fe1403;
 }
 
-.grup-jumlah-produk {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.label-jumlah {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #374151;
-}
-
-.input-jumlah-detail {
-    width: 4.5rem;
-    padding: 0.5rem;
-    border: 1px solid #d1d5db;
-    border-radius: 0.5rem;
-    text-align: center;
-    font-size: 0.875rem;
-    font-weight: 600;
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.input-jumlah-detail:focus {
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-}
-
-.grup-tombol-aksi {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-}
-
-@media (min-width: 640px) {
-    .grup-tombol-aksi {
-        flex-direction: row;
-    }
-}
-
-.tombol-tambah-keranjang {
-    background-color: #eff6ff;
-    color: #2563eb;
-    border: 1px solid #bfdbfe;
-    padding: 0.875rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-align: center;
-    flex: 1;
-    transition: background-color 0.2s, transform 0.15s;
-}
-
-.tombol-tambah-keranjang:hover {
-    background-color: #dbeafe;
-}
-
-.tombol-beli-langsung {
-    background-color: #2563eb;
-    color: #ffffff;
-    padding: 0.875rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-align: center;
-    flex: 1;
-    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.25);
-    transition: background-color 0.2s, transform 0.15s;
-}
-
-.tombol-beli-langsung:hover {
-    background-color: #1d4ed8;
-}
 /* ==========================================
-   3. FOOTER (BERURUTAN KIRI KE KANAN)
+   3. FOOTER
    ========================================== */
 .bagian-footer {
     background-color: #ffffff;
@@ -1097,7 +1000,6 @@ a {
     box-sizing: border-box;
 }
 
-/* Grid berurutan dari kiri ke kanan: Brand & Deskripsi (kiri) | Tautan Cepat (tengah) | Pembayaran (kanan) */
 .kontainer-footer {
     max-width: 80rem;
     margin: 0 auto;
@@ -1109,7 +1011,6 @@ a {
     border-bottom: 1px solid #e5e7eb;
 }
 
-/* Kolom 1 (Kiri): Brand & Deskripsi */
 .kolom-brand {
     display: flex;
     flex-direction: column;
@@ -1152,9 +1053,8 @@ a {
     border-radius: 0.5rem;
 }
 
-/* Kolom 2 & 3 (Tengah ke Kanan): Tautan Cepat & Pembayaran */
 .kolom-kiri-tengah {
-    display: contents; /* Memecah wrapper agar anak-anaknya ikut berurutan kiri ke kanan di grid */
+    display: contents;
 }
 
 .grup-menu-footer {
@@ -1184,7 +1084,6 @@ a {
     border-radius: 9999px;
 }
 
-/* Daftar Tautan Cepat */
 .daftar-tautan-footer {
     list-style: none;
     display: flex;
@@ -1205,7 +1104,6 @@ a {
     transform: translateX(4px);
 }
 
-/* Daftar Pembayaran Berurutan */
 .daftar-pembayaran-footer {
     list-style: none;
     display: flex;
@@ -1235,7 +1133,6 @@ a {
     transform: translateX(3px);
 }
 
-/* Bagian Bawah Footer: Copyright & Ikon Sosmed */
 .bawah-footer {
     max-width: 80rem;
     margin: 0 auto;
