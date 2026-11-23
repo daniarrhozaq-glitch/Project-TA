@@ -22,7 +22,7 @@ a {
 }
 
 /* ==========================================
-   2. NAVBAR UTAMA
+   NAVBAR UTAMA
    ========================================== */
 .bilah-navigasi {
     background-color: #ffffff;
@@ -70,7 +70,7 @@ a {
 .tautan-navigasi {
     font-size: 0.875rem;
     font-weight: 600;
-    color: #010a17;
+    color: #4b5563;
     transition: color 0.2s;
 }
 
@@ -78,11 +78,12 @@ a {
     color: #2563eb;
 }
 
-.tautan-aktif {
+.tautan-navigasi.aktif {
     font-size: 0.875rem;
     font-weight: 600;
     color: #2563eb;
 }
+
 
 .tombol-keluar {
     font-size: 0.875rem;
@@ -99,7 +100,7 @@ a {
 }
 
 /* ==========================================
-   4. HALAMAN UTAMA (INDEX.HTML)
+    HALAMAN UTAMA (INDEX.HTML)
    ========================================== */
 .bagian-banner {
     max-width: 80rem;
@@ -191,7 +192,7 @@ a {
 }
 
 .judul-bagian {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.25rem;
     color: #1f2937;
@@ -265,14 +266,15 @@ a {
     font-weight: 600;
     margin-top: auto;
     transition: background-color 0.2s;
+    cursor: pointer;
 }
 
 .tombol-detail:hover {
-    background-color: #dbeafe;
+    background-color: #82b6fb;
 }
 
 /* ==========================================
-   5. HALAMAN KATALOG & UMUM (KATALOG.HTML)
+   HALAMAN KATALOG & UMUM (KATALOG.HTML)
    ========================================== */
 .kontainer-utama {
     max-width: 80rem;
@@ -824,6 +826,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
 .label-total-bayar {
@@ -961,6 +965,158 @@ body.login-page {
 }
 
 /* ==========================================
+    HALAMAN CUSTOMER SERVICE (CUSTOMER.HTML)
+   ========================================== */
+.header-cs {
+    margin-bottom: 2rem;
+}
+
+.header-cs .judul-halaman {
+    margin-bottom: 0.5rem;
+}
+
+.deskripsi-cs {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.65;
+    max-width: 46rem;
+}
+
+.kisi-cs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+@media (min-width: 1024px) {
+    .kisi-cs {
+        grid-template-columns: 1.6fr 1fr;
+    }
+}
+
+.kartu-cs-form {
+    padding: 2rem;
+}
+
+.form-cs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.select-cs-penuh {
+    max-width: 100%;
+    height: 2.5rem;
+    background-color: #f5f5f6;
+}
+
+.select-cs-penuh:hover {
+    max-width: 100%;
+    height: 2.5rem;
+    background-color:#92b2f8;
+}
+
+.textarea-cs-penuh {
+    margin-top: 0;
+}
+
+.catatan-respon-cs {
+    font-size: 0.8125rem;
+    color: #6b7280;
+}
+
+.tombol-kirim-cs {
+    padding: 0.75rem 1.75rem;
+}
+
+.panel-info-cs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.daftar-kanal-cs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+
+.item-kanal-cs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-bottom: 0.875rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.item-kanal-cs:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.judul-kanal-cs {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.nilai-kanal-cs {
+    font-size: 0.925rem;
+    font-weight: 700;
+    color: #2563eb;
+    transition: color 0.2s;
+}
+
+.nilai-kanal-cs:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.nilai-kanal-cs-teks {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.daftar-faq-cs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.item-faq-cs {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    background-color: #f9fafb;
+}
+
+.item-faq-cs[open] {
+    background-color: #ffffff;
+    border-color: #bfdbfe;
+}
+
+.pertanyaan-faq-cs {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #111827;
+    cursor: pointer;
+    list-style: none;
+}
+
+.jawaban-faq-cs {
+    font-size: 0.8125rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #f3f4f6;
+}
+
+/* ==========================================
    FLASHSALE
    ========================================== */
 .badge-flash-sale {
@@ -968,10 +1124,6 @@ body.login-page {
     font-weight: 700;
     margin-bottom: 1.25rem;
     color: #e95e01;
-}
-
-.judul-bagian {
-    font-size: 1.5rem;
 }
 
 .unit-waktu {
@@ -982,7 +1134,7 @@ body.login-page {
 }
 
 /* ==========================================
-   3. FOOTER
+    FOOTER
    ========================================== */
 .bagian-footer {
     background-color: #ffffff;
