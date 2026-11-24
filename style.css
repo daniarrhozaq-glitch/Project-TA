@@ -1,5 +1,5 @@
 /* ==========================================
-   1. GLOBAL STYLES & RESET
+    GLOBAL STYLES & RESET
    ========================================== */
 * {
     margin: 0;
@@ -363,7 +363,7 @@ a {
 }
 
 /* ==========================================
-   6. HALAMAN DETAIL PRODUK
+    HALAMAN DETAIL PRODUK
    ========================================== */
 .kartu-detail-produk {
     background-color: #ffffff;
@@ -543,7 +543,7 @@ a {
 }
 
 /* ==========================================
-   7. HALAMAN KERANJANG
+    HALAMAN KERANJANG
    ========================================== */
 .kisi-keranjang {
     display: grid;
@@ -710,7 +710,7 @@ a {
 }
 
 /* ==========================================
-   8. HALAMAN CHECKOUT (CHECKOUT.HTML)
+   HALAMAN CHECKOUT (CHECKOUT.HTML)
    ========================================== */
 .kontainer-sedang {
     max-width: 56rem;
@@ -860,7 +860,7 @@ a {
 }
 
 /* ==========================================
-   9. HALAMAN LOGIN (LOGIN.HTML)
+    HALAMAN LOGIN (LOGIN.HTML)
    ========================================== */
 body.login-page {
     justify-content: center;
